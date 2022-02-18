@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onPhotoclick(String path) {
                 //DO Sth with photo
-                Toast.makeText(MainActivity.this, "" +path, Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "" +path, Toast.LENGTH_SHORT).show();  // đoạn này khi click vào 1 ảnh
             }
         });
         recyclerView.setAdapter(galleryAdapter);
