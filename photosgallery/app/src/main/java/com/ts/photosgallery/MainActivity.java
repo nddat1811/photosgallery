@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void loadImages() {
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new GridLayoutManager(this, 2));
+        recyclerView.setLayoutManager(new GridLayoutManager(this, 3));
 
         images = ImagesGallery.listOfImages(this);
         galleryAdapter = new GalleryAdapter(this, images, new GalleryAdapter.PhotoListener() {
